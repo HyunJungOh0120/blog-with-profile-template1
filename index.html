@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media only screen and (max-width: 1200px) {
+        .container {
+          width: 80%;
+        }
+        .about__hero-img {
+          width: 15rem;
+          height: 15rem;
+        }
+        .about__contact-box {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+      }
+    </style>
+    <title>HyunJung.Oh.Agnes's profile</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav__container">
+        <span class="nav__logo monoton">Agnes</span>
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a href="#section-1">HOME</a>
+          </li>
+          <li class="nav__link">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="nav__link">
+            <a href="./blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="section-1" class="section section-1">
+      <div class="container home">
+        <div class="home__text-box">
+          <h2>Hello!</h2>
+          <h1>
+            <span>I Am</span>
+
+            <div class="home__anim-box">
+              <span class="writer anim-typing"> Hyun Jung Oh </span>
+              <span class="writer anim-typing-reverse">A Web Developer</span>
+            </div>
+          </h1>
+
+          <p>I'm a new Web Developer, currently based in Singapore.</p>
+          <div class="home__link-box">
+            <a
+              class="home__link"
+              href="https://www.linkedin.com/in/hyunjung-oh"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-2" class="section section-2">
+      <div class="container about">
+        <div class="about__hero-box">
+          <div class="about__hero-frame">
+            <img
+              src="https://avatars.githubusercontent.com/u/72025960?v=4"
+              alt="profile image"
+              class="about__hero-img"
+            />
+          </div>
+        </div>
+        <div class="about__info-box">
+          <h4 class="black">About me</h4>
+          <h3>I'm a new web developer.</h3>
+          <p>
+            I was a previously Fine Art student, Sales Assistant and Cabin Crew
+            at Singapore Airlines, but now I've become a Web developer. I'd love
+            to use art skills, and follow & make procedures which I could get
+            from Cabin Crew job when making websites.
+          </p>
+          <div class="about__contact-box">
+            <div class="about__contact location">
+              <div class="black"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="black">Location</div>
+              <div>&colon; Pasir ris, Singapore</div>
+            </div>
+            <div class="about__contact age">
+              <div class="black"><i class="far fa-calendar-alt"></i></div>
+              <div class="black">Age</div>
+              <div>&colon; 28</div>
+            </div>
+            <div class="about__contact phone">
+              <div class="black"><i class="fas fa-mobile-alt"></i></div>
+              <div class="black">Phone</div>
+              <div>&colon; 65 8171 3725</div>
+            </div>
+            <div class="about__contact email">
+              <div class="black"><i class="fas fa-at"></i></div>
+              <div class="black">E-mail</div>
+              <div>&colon; hyunjung.agnes.oh@gamil.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/f5ac9989c4.js"
+      crossorigin="f5ac9989c4"
+    ></script>
+  </body>
+</html>

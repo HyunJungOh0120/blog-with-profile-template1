@@ -1,0 +1,405 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  font-family: "Open Sans", sans-serif;
+
+  text-rendering: optimizeLegibility;
+  line-height: 1.45;
+  color: rgb(85, 84, 84);
+  background: rgba(219, 219, 219, 0.404);
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+.container {
+  width: 70%;
+
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2rem 0;
+}
+
+.section {
+  width: 60rem;
+  min-height: 20rem;
+  text-align: center;
+}
+
+.section--left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section--right {
+  width: 30%;
+}
+
+.none {
+  opacity: 0;
+}
+
+.btn {
+  background: none;
+
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-like {
+  padding: 0.5rem;
+  color: tomato;
+  border: 2px solid tomato;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-like span {
+  font-size: 1.4rem;
+}
+
+.btn-read-more {
+  background: tomato;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* /////////////////////////////////////// */
+nav {
+  background: rgb(9, 22, 22);
+  clear: both;
+  transition: 0.4s;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.877);
+}
+
+.sticky-nav .nav__link {
+  color: rgb(58, 58, 58);
+}
+
+.sticky-nav .nav__logo {
+  color: rgb(4, 43, 4);
+}
+
+.navigation {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: "Monoton", cursive;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  margin-left: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.nav__link--activate {
+  color: white;
+}
+
+/* ///////////////////////////////////////////// */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://payload.cargocollective.com/1/2/68904/11655983/FRUITY-hoeckel_600.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  padding: 2rem 0rem 6rem 0rem;
+  height: 12rem;
+}
+
+.header__title {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.74);
+  margin-bottom: 1rem;
+}
+
+.header__text {
+  color: rgba(255, 255, 255, 0.644);
+}
+
+/* ///////////////////////////////////////////// */
+.content {
+  box-shadow: 0 0 20px 0 rgba(158, 158, 158, 0.35);
+  border-radius: 0.3rem;
+
+  margin-bottom: 2rem;
+}
+
+.content__header {
+  display: flex;
+  align-items: center;
+
+  background: chocolate;
+
+  height: 6rem;
+}
+
+.content__dates {
+  padding: 0.3rem;
+  background: white;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 1px solid rgba(115, 119, 107, 0.452);
+}
+
+.content__date {
+  font-size: 2rem;
+}
+
+.content__month {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.content__year {
+  font-size: 0.9rem;
+}
+
+.content__titles {
+  padding: 1rem;
+  width: 90%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__title {
+  font-size: 2rem;
+}
+
+.content__subtitle {
+  font-size: 1rem;
+  color: rgb(152, 184, 37);
+}
+
+.content__img-box {
+  content: "";
+
+  height: 24rem;
+  max-height: 24rem;
+
+  overflow: hidden;
+}
+
+.content__img {
+  display: inline-block;
+  width: 100%;
+}
+
+.content__text {
+  padding: 1rem;
+  background: white;
+  overflow-wrap: break-word;
+
+  height: 15rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__text p {
+  text-align: start;
+  height: 78%;
+  overflow: hidden;
+}
+
+.content__footer {
+  height: 3rem;
+  border-top: 1px solid rgba(115, 119, 107, 0.452);
+  background: white;
+
+  display: flex;
+  align-items: center;
+}
+
+.content__bookmark {
+  height: 100%;
+  width: 10%;
+  font-size: 2rem;
+  border-right: 1px solid rgba(115, 119, 107, 0.452);
+}
+
+.content__like {
+  width: 90%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.content__like-num {
+  margin-left: 1rem;
+  color: tomato;
+}
+/* //////////////////////////////////////////// */
+.search__form {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  display: flex;
+  border-radius: 0.1rem;
+}
+
+.search__img {
+  background: rgba(219, 219, 219, 0.404);
+  padding: 1rem;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+
+.search__input {
+  background: rgba(219, 219, 219, 0.404);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.posts-table {
+  background: white;
+}
+
+.post__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.post__sort {
+  background: rgba(219, 219, 219, 0.404);
+}
+
+.post-sort-clicked {
+  background: white;
+}
+
+.post__content {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  margin: 1rem;
+}
+
+.post__hero img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.post__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.post__title {
+  color: black;
+}
+
+.post__subtitle {
+  color: darkgrey;
+  font-size: 0.9rem;
+}
+
+.category-table {
+  background: white;
+}
+
+.category__title {
+  font-size: 0.9rem;
+}
+
+.category__lists-box {
+  padding: 0 1rem 1rem 1rem;
+  text-align: start;
+}
+
+.category__lists {
+}
+
+.category__list {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(115, 119, 107, 0.452);
+}
+
+.category__list a {
+  color: rgb(54, 54, 54);
+}
+
+.category__count {
+  color: rgba(57, 59, 53, 0.452);
+}
